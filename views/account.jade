@@ -1,0 +1,15 @@
+h2(align='center')
+    u Userdata
+    table#heading(align= 'center').table-striped
+      tr
+        td
+          | User Id: #{user.identifier}
+      tr
+        td
+          | Name: #{user.displayName}
+      tr
+        td
+          | Email: #{user.emails[0].value}
+      tr
+        td
+          | <a href="/logout">Logout</a>

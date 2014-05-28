@@ -1,0 +1,7 @@
+h2(align='center')
+  if(!user)
+    h2 Not Logged in..
+    br
+    | Google Login &nbsp; To Login <a href="/auth/google">Click Here</a>
+  else
+    h2 Hello, #{user.identifier}
